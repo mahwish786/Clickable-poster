@@ -1,0 +1,152 @@
+/* Reset & Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    margin: 20px 0;
+    text-align: center;
+    color: #0044cc;
+    background-color: #ffcc00;
+    font-size: 28px;
+    transition: 0.3s ease;
+    border-radius: 1rem;
+
+}
+
+h1:hover{
+    color: #ffcc00;
+    background-color: #0044cc;
+    text-shadow: 0 0 10px #0044cc, 0 0 20px #0044cc;
+
+}
+
+/* Poster Image Styling */
+img {
+    display: block;
+    margin: 25px auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph / Description */
+p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    background-color: #e9f0ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Footer Social Icons */
+footer {
+    margin-top: 40px;
+    background-color: #222;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    margin: 0 15px;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+footer .contact-info {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+footer .contact-info a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer .contact-info a i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+footer .contact-info a:hover {
+    color: #00ff99;
+}
+
+
+/* Optional: Responsive Button Style (if added) */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+/* this is responsive in tablets */
+@media (max-width: 768px){
+    h1{
+        font-size: 24px;
+    }
+    p{
+        font-size: 15px;
+        padding: 12px;
+    }
+    .btn{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    footer a {
+        font-size: 22px;
+        padding: 0 10px;
+    }
+}
+
+/* this is responsive in phones */
+@media(max-width: 480px){
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .btn{
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+    footer a {
+        font-size: 20px;
+        padding: 0 8px;
+    }
+}
